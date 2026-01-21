@@ -136,22 +136,25 @@ const ContactForm: React.FC<ContactFormProps> = ({ simple = false }) => {
                 <div className="grid lg:grid-cols-2 gap-12">
                     <div>
                         <span className="inline-flex items-center rounded-full bg-[#F1F1F1] text-[#0D1615] px-4 py-1.5 text-sm leading-[22px]">
-                            {content.subtitle}
+                            {content.leadingText}
                         </span>
                         <h2 className="mt-3 font-sora text-[34px] sm:text-[48px] leading-[42px] sm:leading-14 font-semibold text-[#0D1615]">
                             {content.heading}
                         </h2>
                         <p className="mt-4 text-[16px] leading-7 text-[#606060] max-w-[520px]">
-                            {content.body}
+                            {/* Descriptive copy for the contact section */}
+                            Reach out with your project details or questions, and our team will
+                            get back to you as soon as possible.
                         </p>
                     </div>
 
                     <div>
                         <h3 className="font-sora text-[22px] sm:text-[26px] font-semibold text-[#0D1615]">
-                            {content.form.heading}
+                            Send us a message
                         </h3>
                         <p className="mt-2 text-[15px] text-[#6B7280]">
-                            {content.form.body}
+                            Fill in the form and we’ll follow up to discuss your needs and next
+                            steps.
                         </p>
                         {/* Recursive call with simple=true to render form */}
                         <ContactForm simple={true} />
