@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "list": [
+      {
+        "item": "HOME",
+        "link": "/"
+      },
+      {
+        "item": "ABOUT",
+        "link": "/about"
+      },
+      {
+        "item": "PRODUCTS",
+        "link": "/products"
+      },
+      {
+        "item": "SERVICES",
+        "link": "/services"
+      },
+      {
+        "item": "CONTACT",
+        "link": "/contact"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "Crafted for Living. Designed to Last.",
+    "body": "HELP OPTIMIZATION delivers premium doors, windows, and home solutions tailored to your space. From concept to installation, we combine design, precision, and craftsmanship.",
+    "button": "Request a Consultation",
+    "link": "/contact"
+  },
+  "about": {
+    "leadingText": "About Us",
+    "heading": "Quality Craftsmanship. Thoughtful Design.",
+    "body": "At HELP OPTIMIZATION, we specialize in made-to-measure doors, windows, home hardware, and interior solutions. Our mission is to transform spaces through durable materials, unique designs, and expert workmanship.",
+    "button": "Learn More About Us",
+    "link": "/about",
+    "stats": [
+      {
+        "title": "Offices",
+        "number": "90+"
+      },
+      {
+        "title": "Happy Clients",
+        "number": "300+"
+      },
+      {
+        "title": "Years of Experience",
+        "number": "25+"
+      },
+      {
+        "title": "Completed Projects",
+        "number": "500+"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Doors",
+      "image": "/images/projects/doors.jpg"
+    },
+    {
+      "title": "Windows",
+      "image": "/images/projects/windows.jpg"
+    },
+    {
+      "title": "Home Hardware",
+      "image": "/images/projects/hardware.jpg"
+    },
+    {
+      "title": "Home Design",
+      "image": "/images/projects/design.jpg"
+    }
+  ],
+  "services": {
+    "leadingText": "Our Services",
+    "heading": "Tailored Solutions for Every Home",
+    "sections": [
+      {
+        "title": "Unique Home Design",
+        "body": "We design interiors and functional elements that balance aesthetics, comfort, and long-term durability.",
+        "image": "/images/services/design.jpg",
+        "link": "/services"
+      },
+      {
+        "title": "Made-to-Measure Solutions",
+        "body": "Custom doors, windows, and furniture built to perfectly fit your space, style, and functional needs.",
+        "image": "/images/services/custom.jpg",
+        "link": "/services"
+      },
+      {
+        "title": "Furniture Restoration",
+        "body": "Professional restoration services that preserve character while extending the life of your furniture.",
+        "image": "/images/services/restoration.jpg",
+        "link": "/services"
+      }
+    ]
+  },
+  "whyUs": {
+    "images": [
+      "/images/why-us/1.jpg",
+      "/images/why-us/2.jpg"
+    ],
+    "leadingText": "Why Choose Us",
+    "heading": "Built on Precision and Trust",
+    "body": "We focus on quality materials, expert craftsmanship, and reliable service to ensure every project exceeds expectations.",
+    "button": "View All Services",
+    "link": "/services",
+    "sections": [
+      {
+        "image": "/van.svg",
+        "title": "Nationwide Delivery",
+        "body": "We provide reliable delivery services, ensuring your products arrive safely and on time.",
+        "link": "/services"
+      },
+      {
+        "image": "/headset.svg",
+        "title": "Premium Materials",
+        "body": "Only high-quality, durable materials are used to guarantee long-lasting performance.",
+        "link": "/services"
+      },
+      {
+        "image": "/shield-check.svg",
+        "title": "Dedicated Customer Support",
+        "body": "Our team supports you at every stage, from consultation to after-sales service.",
+        "link": "/services"
+      }
+    ]
+  },
+  "partners": {
+    "image": [
+      "/images/partners/1.jpg",
+      "/images/partners/logo.jpg"
+    ]
+  },
+  "contact": {
+    "leadingText": "Get in Touch",
+    "heading": "Contact Us for Custom Home Solutions",
+    "form": {
+      "inputs": [
+        "name",
+        "email",
+        "message"
+      ],
+      "button": "Send Message"
+    }
+  },
+  "footer": {
+    "office": {
+      "address": "Your office address here",
+      "email": "info@helpoptimization.com",
+      "mobile": "+123 456 7890"
+    },
+    "quickLinks": {
+      "heading": "Quick Links",
+      "list": [
+        {
+          "item": "About Us",
+          "link": "/about"
+        },
+        {
+          "item": "Products",
+          "link": "/products"
+        },
+        {
+          "item": "Services",
+          "link": "/services"
+        },
+        {
+          "item": "Contact",
+          "link": "/contact"
+        }
+      ]
+    },
+    "bottom": {
+      "body": "© 2026 HELP OPTIMIZATION. All rights reserved."
+    }
+  }
+}
