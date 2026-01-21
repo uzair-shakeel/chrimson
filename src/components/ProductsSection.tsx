@@ -1,36 +1,19 @@
 import Image from 'next/image';
-
-const products = [
-    {
-        tag: "Best Service",
-        title: "Unique designs",
-        description: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        image: "/our-services-1.jpg"
-    },
-    {
-        tag: "Best Service",
-        title: "Made to measure",
-        description: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        image: "/our-services-2.jpg"
-    },
-    {
-        tag: "Best Service",
-        title: "Furniture restoration",
-        description: "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        image: "/our-services-3.jpg" // Reusing image 1 for the 3rd slot
-    }
-];
+import data from './data.json';
 
 export default function ProductsSection() {
+    const productsSection = data.productsSection;
+    const products = productsSection.items;
+
     return (
         <section className=" container mx-auto px-4 py-20 ">
             {/* Header */}
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <span className="block text-[13px] font-semibold tracking-wider text-[#062A4D] mb-4 uppercase">
-                    Premium Quality
+                    {productsSection.leadingText}
                 </span>
                 <h2 className="text-[38px] md:text-[46px] lg:text-[56px] font-bold text-[#062A4D] leading-tight">
-                    Our products make your life comfortable
+                    {productsSection.heading}
                 </h2>
             </div>
 

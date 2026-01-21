@@ -1,33 +1,8 @@
 import Image from 'next/image';
-
-const products = [
-    {
-        id: "01.",
-        title: "Doors",
-        subtitle: "",
-        image: "/products-1.jpg"
-    },
-    {
-        id: "02.",
-        title: "Windows",
-        subtitle: "Home",
-        image: "/products-2.jpg"
-    },
-    {
-        id: "03.",
-        title: "Hardware",
-        subtitle: "",
-        image: "/products-3.jpg"
-    },
-    {
-        id: "04.",
-        title: "Furniture",
-        subtitle: "",
-        image: "/products-4.jpg"
-    }
-];
+import data from './data.json';
 
 export default function ProductsSection() {
+    const products = data.servicesGrid.items;
     return (
         <section className=" py-12 px-6">
             <div className="max-w-[1280px] mx-auto">

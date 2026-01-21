@@ -142,19 +142,16 @@ const ContactForm: React.FC<ContactFormProps> = ({ simple = false }) => {
                             {content.heading}
                         </h2>
                         <p className="mt-4 text-[16px] leading-7 text-[#606060] max-w-[520px]">
-                            {/* Descriptive copy for the contact section */}
-                            Reach out with your project details or questions, and our team will
-                            get back to you as soon as possible.
+                            {content.body}
                         </p>
                     </div>
 
                     <div>
                         <h3 className="font-sora text-[22px] sm:text-[26px] font-semibold text-[#0D1615]">
-                            Send us a message
+                            {content.formHeading}
                         </h3>
                         <p className="mt-2 text-[15px] text-[#6B7280]">
-                            Fill in the form and we’ll follow up to discuss your needs and next
-                            steps.
+                            {content.formBody}
                         </p>
                         {/* Recursive call with simple=true to render form */}
                         <ContactForm simple={true} />

@@ -72,6 +72,30 @@
       "image": "/images/projects/design.jpg"
     }
   ],
+  "productsSection": {
+    "leadingText": "Premium Quality",
+    "heading": "Our products make your life comfortable",
+    "items": [
+      {
+        "tag": "Best Service",
+        "title": "Unique designs",
+        "description": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "/our-services-1.jpg"
+      },
+      {
+        "tag": "Best Service",
+        "title": "Made to measure",
+        "description": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "/our-services-2.jpg"
+      },
+      {
+        "tag": "Best Service",
+        "title": "Furniture restoration",
+        "description": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "/our-services-3.jpg"
+      }
+    ]
+  },
   "services": {
     "leadingText": "Our Services",
     "heading": "Tailored Solutions for Every Home",
@@ -93,6 +117,34 @@
         "body": "Professional restoration services that preserve character while extending the life of your furniture.",
         "image": "/images/services/restoration.jpg",
         "link": "/services"
+      }
+    ]
+  },
+  "servicesGrid": {
+    "items": [
+      {
+        "id": "01.",
+        "title": "Doors",
+        "subtitle": "",
+        "image": "/products-1.jpg"
+      },
+      {
+        "id": "02.",
+        "title": "Windows",
+        "subtitle": "Home",
+        "image": "/products-2.jpg"
+      },
+      {
+        "id": "03.",
+        "title": "Hardware",
+        "subtitle": "",
+        "image": "/products-3.jpg"
+      },
+      {
+        "id": "04.",
+        "title": "Furniture",
+        "subtitle": "",
+        "image": "/products-4.jpg"
       }
     ]
   },
@@ -136,6 +188,9 @@
   "contact": {
     "leadingText": "Get in Touch",
     "heading": "Contact Us for Custom Home Solutions",
+    "body": "Reach out with your project details or questions, and our team will get back to you as soon as possible.",
+    "formHeading": "Send us a message",
+    "formBody": "Fill in the form and we’ll follow up to discuss your needs and next steps.",
     "form": {
       "inputs": [
         "name",
