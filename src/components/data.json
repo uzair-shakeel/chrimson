@@ -37,10 +37,6 @@
     "link": "/about",
     "stats": [
       {
-        "title": "Offices",
-        "number": "90+"
-      },
-      {
         "title": "Happy Clients",
         "number": "300+"
       },
@@ -79,19 +75,19 @@
       {
         "tag": "Best Service",
         "title": "Unique designs",
-        "description": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "We design interiors and functional elements that balance aesthetics, comfort, and long-term durability.",
         "image": "/our-services-1.jpg"
       },
       {
         "tag": "Best Service",
         "title": "Made to measure",
-        "description": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "Custom doors, windows, and furniture built to perfectly fit your space, style, and functional needs.",
         "image": "/our-services-2.jpg"
       },
       {
         "tag": "Best Service",
         "title": "Furniture restoration",
-        "description": "Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "description": "Professional restoration services that preserve character while extending the life of your furniture.",
         "image": "/our-services-3.jpg"
       }
     ]
@@ -166,13 +162,13 @@
         "link": "/services"
       },
       {
-        "image": "/headset.svg",
+        "image": "/shield-check.svg",
         "title": "Premium Materials",
         "body": "Only high-quality, durable materials are used to guarantee long-lasting performance.",
         "link": "/services"
       },
       {
-        "image": "/shield-check.svg",
+        "image": "/headset.svg",
         "title": "Dedicated Customer Support",
         "body": "Our team supports you at every stage, from consultation to after-sales service.",
         "link": "/services"

@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
 
   const footerSections: FooterSection[] = [
     { title: footerContent.quickLinks.heading, links: quickLinks },
-    { title: data.services.heading, links: servicesLinks },
+    // { title: data.services.heading, links: servicesLinks },
   ];
 
   return (
@@ -46,6 +46,8 @@ const Footer: React.FC = () => {
                 height={80}
               />
             </div>
+
+            <div></div>
 
             {/* Dynamic Footer Sections */}
             {footerSections.map((section, index) => (

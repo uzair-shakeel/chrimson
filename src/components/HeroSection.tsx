@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="relative h-screen w-full overflow-hidden z-0">
       {/* Background Image */}
       <Image
-        src="/hero-background.png"
+        src="/hero-bg.png"
         alt="Modern interior with windows"
         fill
         className="object-cover"

@@ -5,10 +5,10 @@ import Image from "next/image";
 const Partners: React.FC = () => {
   return (
     <section className=" mt-10">
-      <div className="h-screen w-full">
+      <div className="h-screen md:max-h-[600px] w-full">
         <div className="h-full max-w-full">
           <Image
-            src={`/hero-background.png`}
+            src={`/partners.jpg`}
             alt="Brand logos"
             width={1000}
             height={1000}

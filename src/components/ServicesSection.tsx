@@ -4,7 +4,7 @@ import data from './data.json';
 export default function ProductsSection() {
     const products = data.servicesGrid.items;
     return (
-        <section className=" py-12 px-6">
+        <section className="bg-white py-12 px-6">
             <div className="max-w-[1280px] mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {products.map((product, index) => (

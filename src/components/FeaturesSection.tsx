@@ -14,17 +14,17 @@ export default function FeaturesSection() {
 
                         {/* Images Area */}
                         <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-start gap-6">
-                            <div className="relative w-1/2 aspect-3/4 shadow-lg overflow-hidden">
+                            <div className="relative w-1/2 aspect-[3/4] shadow-lg overflow-hidden rounded-xl">
                                 <Image
-                                    src="/our-services-1.jpg"
+                                    src="/features-1.jpg"
                                     alt="Woman working by a large window"
                                     fill
                                     className="object-cover"
                                 />
                             </div>
-                            <div className="relative w-1/2 aspect-3/4 shadow-lg overflow-hidden">
+                            <div className="relative w-1/2 aspect-[3/4] shadow-lg overflow-hidden rounded-xl">
                                 <Image
-                                    src="/our-services-2.jpg"
+                                    src="/features-2.jpg"
                                     alt="Wooden door interior"
                                     fill
                                     className="object-cover"

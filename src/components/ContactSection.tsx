@@ -12,10 +12,10 @@ const ContactSection = () => {
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full z-0">
                 <Image
-                    src="/contact-bg.png"
+                    src="/contact.jpg"
                     alt="Modern interior background"
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
                     priority
                 />
             </div>
