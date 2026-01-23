@@ -8,7 +8,7 @@ const Partners: React.FC = () => {
       <div className="h-screen md:max-h-[600px] w-full">
         <div className="h-full max-w-full">
           <Image
-            src={`/partners.jpg`}
+            src={`/partners-bg.jpg`}
             alt="Brand logos"
             width={1000}
             height={100}
