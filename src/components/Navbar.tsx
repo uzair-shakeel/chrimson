@@ -102,7 +102,7 @@ const Navbar = () => {
       <div className="max-w-[1400px] mx-auto flex items-center justify-between w-full h-20 sm:h-24 px-6 md:px-12 gap-6 md:gap-16">
         <div className="flex items-center">
           <Image
-            src={scrolled ? "/logo.webp" : "/logo.webp"}
+            src={scrolled ? "/logo-black.webp" : "/logo.webp"}
             alt="logo"
             width={200}
             height={80}
@@ -175,7 +175,7 @@ const Navbar = () => {
               aria-modal="true"
             >
               <div className="flex items-end justify-end">
-               
+
                 <button
                   aria-label="Close menu"
                   className="h-9 w-9 inline-flex items-center justify-center rounded-md border border-gray-200"

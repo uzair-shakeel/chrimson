@@ -47,7 +47,7 @@ export default function ProductsSection() {
                 Hover (and middle card by default/example): Teal bg, White icon.
                 I will make them all have the hover effect.
             */}
-                            <button className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all duration-300 group-hover:bg-[#50AAB2] group-hover:border-[#50AAB2] group-hover:text-white text-[#062A4D]">
+                            <button className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all duration-300 group-hover:bg-[#50AAB2] group-hover:border-[#50AAB2] group-hover:text-white cursor-pointer text-[#062A4D]">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                                 </svg>

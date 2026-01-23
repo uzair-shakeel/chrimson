@@ -48,7 +48,7 @@ export default function FeaturesSection() {
                             </p>
 
                             <Link href={whyUs.link}>
-                                <button className="bg-[#4d9fa8] hover:bg-[#3d838b] text-white px-8 py-4 font-semibold transition-colors duration-200">
+                                <button className="bg-[#4d9fa8] hover:bg-[#3d838b] text-white px-8 py-4 font-semibold transition-colors duration-200 cursor-pointer">
                                     {whyUs.button}
                                 </button>
                             </Link>
