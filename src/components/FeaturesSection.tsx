@@ -58,16 +58,7 @@ export default function FeaturesSection() {
             </section>
 
             {/* Original three-column features grid below */}
-            <section className="container mx-auto px-4 py-16">
-                <div className="text-center mb-12">
-                    <p className="text-sm font-bold tracking-widest text-slate-500 uppercase mb-2">
-                        {whyUs.leadingText}
-                    </p>
-                    <h2 className="text-[32px] md:text-[42px] font-bold text-[#062A4D]">
-                        {whyUs.heading}
-                    </h2>
-                </div>
-
+            <section className="container mx-auto px-4 pt-2 pb-16">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-12">
                     {whyUs.sections.map((feature, index) => (
                         <div
