@@ -6,6 +6,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import data from "./data.json";
 
+// ... (rest of the component logic remains the same) ...
 type NavItem = {
   name: string;
   link: string;
@@ -28,6 +29,7 @@ const Navbar = () => {
     setMounted(true);
   }, []);
 
+  // ... (useEffect for drawer shown/scroll lock remains the same) ...
   useEffect(() => {
     if (!drawerShown) return;
     const scrollY = window.scrollY || 0;
@@ -55,6 +57,7 @@ const Navbar = () => {
     };
   }, [drawerShown]);
 
+  // ... (useEffect for scroll handling remains the same) ...
   useEffect(() => {
     lastY.current = window.scrollY || 0;
     const onScroll = () => {
@@ -75,6 +78,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+
   const navItems: NavItem[] = useMemo(() => {
     const list = data.nav.list;
     return list.map((it) => {
@@ -91,18 +95,35 @@ const Navbar = () => {
     });
   }, [pathname]);
 
-  return (
 
+  // Determine if we are on the homepage
+  const isHomePage = pathname === "/";
+  
+  // Define base classes and conditional background classes
+  const baseClasses = "fixed top-0 left-0 w-full z-50 transition-all duration-500";
+  
+  let backgroundClasses = "";
+  if (isHomePage) {
+    // Homepage: transparent normally, white when scrolled
+    backgroundClasses = scrolled
+      ? "bg-white/95 backdrop-blur-md shadow-sm py-0 translate-y-0"
+      : "bg-transparent py-2";
+  } else {
+    // Other pages: always white background, regardless of scroll position
+    backgroundClasses = "bg-white shadow-sm py-0 translate-y-0";
+  }
+
+
+  return (
+    // Combine base classes, background classes, and visibility classes
     <div
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled
-        ? "bg-white/95 backdrop-blur-md shadow-sm py-0 translate-y-0"
-        : "bg-transparent py-2"
-        } ${visible ? "translate-y-0" : "-translate-y-full"}`}
+      className={`${baseClasses} ${backgroundClasses} ${visible ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="max-w-[1400px] mx-auto flex items-center justify-between w-full h-20 sm:h-24 px-6 md:px-12 gap-6 md:gap-16">
         <div className="flex items-center">
+          {/* Logo logic adjusted slightly for clarity, though original was mostly fine */}
           <Image
-            src={scrolled ? "/logo-black.svg" : "/logo.svg"}
+            src={scrolled || !isHomePage ? "/logo-black.svg" : "/logo.svg"}
             alt="logo"
             width={200}
             height={80}
@@ -116,12 +137,12 @@ const Navbar = () => {
             <Link
               key={item.name}
               href={item.link || "#"}
-              className={`text-[15px] font-[600] tracking-wide transition-all duration-300 relative group overflow-hidden ${scrolled ? "text-gray-800" : "text-white"
+              className={`text-[15px] font-[600] tracking-wide transition-all duration-300 relative group overflow-hidden ${scrolled || !isHomePage ? "text-gray-800" : "text-white"
                 }`}
             >
               <span className="relative z-10">{item.name}</span>
               <span
-                className={`absolute bottom-0 left-0 w-full h-[2px] transition-transform duration-300 origin-left scale-x-0 group-hover:scale-x-100 ${scrolled ? "bg-gray-800" : "bg-white"
+                className={`absolute bottom-0 left-0 w-full h-[2px] transition-transform duration-300 origin-left scale-x-0 group-hover:scale-x-100 ${scrolled || !isHomePage ? "bg-gray-800" : "bg-white"
                   } ${item.active ? "scale-x-100" : ""}`}
               />
             </Link>
@@ -131,7 +152,7 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           <button
             aria-label="Open menu"
-            className={`md:hidden inline-flex items-center justify-center h-10 w-10 rounded-md transition-colors ${scrolled ? "text-gray-800 border-gray-200" : "text-white border-white/20"
+            className={`md:hidden inline-flex items-center justify-center h-10 w-10 rounded-md transition-colors ${scrolled || !isHomePage ? "text-gray-800 border-gray-200" : "text-white border-white/20"
               } border`}
             onClick={() => {
               setDrawerShown(true);
@@ -153,8 +174,8 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-
-      {/* Menu (Portal) */}
+      
+      {/* ... (Menu Portal logic remains the same) ... */}
       {
         mounted &&
         drawerShown &&
@@ -221,8 +242,9 @@ const Navbar = () => {
           document.body
         )
       }
-    </div >
+    </div>
   );
 };
 
 export default Navbar;
+
