@@ -40,11 +40,6 @@ export default function ProductsSection() {
                                     <h3 className="text-[32px] md:text-[40px] font-bold leading-tight transition-transform duration-500 ease-out transform group-hover:-translate-y-2">
                                         {product.title}
                                     </h3>
-
-                                    {/* Subtitle - Slides up from bottom */}
-                                    <p className="text-[18px] md:text-[20px] text-white/90 transition-all duration-500 ease-out opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-[-8px] mt-1">
-                                        {product.subtitle || "Home"}
-                                    </p>
                                 </div>
                             </div>
                         </div>
