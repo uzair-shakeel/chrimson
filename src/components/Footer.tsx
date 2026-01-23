@@ -76,6 +76,13 @@ const Footer: React.FC = () => {
                 Contact
               </h3>
               <ul className="space-y-2.5">
+                {org?.company && (
+                  <li>
+                    <span className="text-[#C8C8C8] text-[17px] leading-[30px]">
+                      Company: {org.company}
+                    </span>
+                  </li>
+                )}
                 {org?.address && (
                   <li>
                     <span className="text-[#C8C8C8] text-[17px] leading-[30px]">
