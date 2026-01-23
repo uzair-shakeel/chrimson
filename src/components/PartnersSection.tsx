@@ -11,8 +11,8 @@ const Partners: React.FC = () => {
             src={`/partners.jpg`}
             alt="Brand logos"
             width={1000}
-            height={1000}
-            className="object-cover w-full h-full"
+            height={100}
+            className="bg-center object-cover w-full h-full"
           />
         </div>
 

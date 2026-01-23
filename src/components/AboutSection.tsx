@@ -13,7 +13,7 @@ export default function AboutSection() {
                     {/* Background Image (Lamp) */}
                     <div className="relative w-full h-[400px] md:h-[450px] lg:h-[550px]">
                         <Image
-                            src="/about-us.jpg"
+                            src="/about-2.png"
                             alt="Wicker lamp"
                             fill
                             className="object-cover"
