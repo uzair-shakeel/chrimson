@@ -6,24 +6,22 @@ export default function AboutSection() {
     const aboutCopy = data.about;
 
     return (
-        <section className="bg-[var(--background)] py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-white">
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
-                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
+                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-10">
 
                     {/* Background Image (Lamp) */}
-                    <div className="relative w-full h-[400px] md:h-[550px] lg:h-[650px]">
+                    <div className="relative w-full h-[400px] md:h-[450px] lg:h-[550px]">
                         <Image
-                            src="/about.png"
+                            src="/about-us.jpg"
                             alt="Wicker lamp"
                             fill
                             className="object-cover"
                         />
                     </div>
 
-
-
                     {/* Text Content */}
-                    <div className="w-full lg:w-1/2 flex flex-col items-start text-left space-y-6 lg:pl-10 mt-12 lg:mt-0">
+                    <div className="w-full  flex flex-col items-start text-left space-y-6 lg:pl-10 mt-12 lg:mt-0">
                         <div className="space-y-4">
                             <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">
                                 {aboutCopy.leadingText}

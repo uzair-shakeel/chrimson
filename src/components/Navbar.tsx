@@ -174,13 +174,8 @@ const Navbar = () => {
               role="dialog"
               aria-modal="true"
             >
-              <div className="flex items-center justify-between">
-                <Image
-                  src="/logo.webp"
-                  alt="logo"
-                  width={200}
-                  height={80}
-                />
+              <div className="flex items-end justify-end">
+               
                 <button
                   aria-label="Close menu"
                   className="h-9 w-9 inline-flex items-center justify-center rounded-md border border-gray-200"
@@ -192,7 +187,7 @@ const Navbar = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    fill="currentColor"
+                    fill="#000"
                     className="h-5 w-5"
                   >
                     <path

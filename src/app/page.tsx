@@ -11,7 +11,7 @@ import Services from '@/components/ServicesSection';
 
 export default function Home() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen">
       <Navbar />
       <HeroSection />
       <AboutSection />
