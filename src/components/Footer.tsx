@@ -79,21 +79,28 @@ const Footer: React.FC = () => {
                 {org?.address && (
                   <li>
                     <span className="text-[#C8C8C8] text-[17px] leading-[30px]">
-                      {org.address}
+                      Address: {org.address}
                     </span>
                   </li>
                 )}
                 {org?.email && (
                   <li>
                     <span className="text-[#C8C8C8] text-[17px] leading-[30px]">
-                      {org.email}
+                      Email: {org.email}
                     </span>
                   </li>
                 )}
                 {org?.mobile && (
                   <li>
                     <span className="text-[#C8C8C8] text-[17px] leading-[30px]">
-                      {org.mobile}
+                      Mobile: {org.mobile}
+                    </span>
+                  </li>
+                )}
+                {org?.abn && (
+                  <li>
+                    <span className="text-[#C8C8C8] text-[17px] leading-[30px]">
+                      ABN: {org.abn}
                     </span>
                   </li>
                 )}
