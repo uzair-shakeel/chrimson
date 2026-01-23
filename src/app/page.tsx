@@ -11,8 +11,7 @@ import Services from '@/components/ServicesSection';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Navbar />
+    <>
       <HeroSection />
       <AboutSection />
       <Services />
@@ -21,7 +20,6 @@ export default function Home() {
       <Partners />
       <Brands />
       <ContactSection />
-      <Footer />
-    </main>
+    </>
   );
 }
