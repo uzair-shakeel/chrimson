@@ -76,19 +76,19 @@
         "tag": "Best Service",
         "title": "Unique designs",
         "description": "We design interiors and functional elements that balance aesthetics, comfort, and long-term durability.",
-        "image": "/our-services-1.jpg"
+        "image": "/our-services-a.jpg"
       },
       {
         "tag": "Best Service",
         "title": "Made to measure",
         "description": "Custom doors, windows, and furniture built to perfectly fit your space, style, and functional needs.",
-        "image": "/our-services-2.jpg"
+        "image": "/our-services-b.jpg"
       },
       {
         "tag": "Best Service",
         "title": "Furniture restoration",
         "description": "Professional restoration services that preserve character while extending the life of your furniture.",
-        "image": "/our-services-3.jpg"
+        "image": "/our-services-c.jpg"
       }
     ]
   },

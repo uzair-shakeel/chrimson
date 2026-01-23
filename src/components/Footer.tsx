@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             {/* Logo Section */}
             <div>
               <Image
-                src="/logo.webp"
+                src="/logo.svg"
                 alt="Mavix Logo"
                 width={200}
                 height={80}
