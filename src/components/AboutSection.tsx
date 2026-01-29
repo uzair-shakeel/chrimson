@@ -1,56 +1,71 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import data from './data.json';
+import Image from "next/image";
+import Link from "next/link";
+import data from "./data.json";
 
 export default function AboutSection() {
     const aboutCopy = data.about;
 
     return (
         <section className="py-16 md:py-24 bg-white">
-            <div className="container mx-auto px-4 md:px-6 lg:px-8">
-                <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-10">
-
-                    {/* Background Image (Lamp) */}
-                    <div className="relative w-full h-[400px] md:h-[450px] lg:h-[550px]">
-                        <Image
-                            src="/about-2.png"
-                            alt="Wicker lamp"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-
+            <div className="container mx-auto px-4">
+                <div className="flex items-center lg:flex-row flex-col justify-between gap-12 lg:gap-10">
                     {/* Text Content */}
-                    <div className="w-full  flex flex-col items-start text-left space-y-6 lg:pl-10 mt-12 lg:mt-0">
-                        <div className="space-y-4">
-                            <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">
-                                {aboutCopy.leadingText}
-                            </p>
-                            <h2 className="text-[38px] md:text-[46px] md:leading-[50px] lg:text-[56px] lg:leading-[53px] font-[700] leading-[40px] text-[#062A4D] ">
-                                {aboutCopy.heading}
-                            </h2>
-                        </div>
+                    <div className="w-full lg:max-w-125.25 flex flex-col items-start text-left">
 
-                        <p className="text-[17px] text-gray-600 max-w-sm leading-relaxed">
+                        <p className="text-[28px] sm:text-[40px] leading-10 sm:leading-13 text-[#111111] font-oswald font-normal tracking-[4px] uppercase">
+                            {aboutCopy.heading}
+                        </p>
+
+                        <div className="w-12.5 h-px bg-[#111111] my-6" />
+
+                        <p className="text-[15px] font-playfair text-[#111111] leading-6 mb-3.75">
                             {aboutCopy.body}
                         </p>
 
-
+                        <ul className="font-playfair text-[#111111] list-disc ml-5 mb-8 space-y-1.5 text-[15px] leading-6">
+                            <li>Pura Vida Bracelets</li>
+                            <li>Saski Collection</li>
+                            <li>Bootcamp and Balmain</li>
+                        </ul>
 
                         <Link href={aboutCopy.link}>
-                            <button className="bg-[#4d9fa8] hover:bg-[#3d838b] text-white px-8 py-4 font-semibold transition-colors duration-200 cursor-pointer">
+                            <button className="bg-[#4d9fa8] hover:bg-[#3d838b] text-white px-10 h-[50px] font-semibold transition-colors duration-200 cursor-pointer">
                                 {aboutCopy.button}
                             </button>
                         </Link>
                     </div>
+
+                    <Image
+                        src="/aboutus.jpg"
+                        alt="Wicker lamp"
+                        width={550}
+                        height={550}
+                        className="object-cover"
+                    />
                 </div>
 
-                {/* Stats Section */}
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mt-32 border-t-0 pt-0">
-                    {aboutCopy.stats.map((stat, index) => (
-                        <div key={index} className="flex flex-col items-center text-center space-y-2">
-                            <span className="text-slate-600 font-bold text-sm">{stat.title}</span>
-                            <span className="text-5xl md:text-6xl font-bold text-[#0f172a]">{stat.number}</span>
+                {/* Features Section */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mt-16 md:mt-32 border-t-0 pt-0">
+                    {aboutCopy.features.map((feature, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-start text-left group"
+                        >
+                            <div className="mb-6 sm:mb-[30px]">
+                                <Image
+                                    src={feature.icon}
+                                    alt={feature.title}
+                                    width={55}
+                                    height={55}
+                                    className="object-contain opacity-70 group-hover:opacity-100 transition duration-200 scale-100 group-hover:scale-105"
+                                />
+                            </div>
+                            <h3 className="text-[20px] leading-[26px] font-oswald font-normal text-[#121F38] tracking-[2px] mb-2.5 group-hover:text-[#B1915E] transition-colors duration-200 uppercase">
+                                {feature.title}
+                            </h3>
+                            <p className="text-[15px] font-playfair leading-[25px] text-[#111111]">
+                                {feature.body}
+                            </p>
                         </div>
                     ))}
                 </div>

@@ -96,38 +96,32 @@ const Navbar = () => {
   }, [pathname]);
 
 
-  // Determine if we are on the homepage
   const isHomePage = pathname === "/";
   
-  // Define base classes and conditional background classes
   const baseClasses = "fixed top-0 left-0 w-full z-50 transition-all duration-500";
   
   let backgroundClasses = "";
   if (isHomePage) {
-    // Homepage: transparent normally, white when scrolled
     backgroundClasses = scrolled
       ? "bg-white/95 backdrop-blur-md shadow-sm py-0 translate-y-0"
       : "bg-transparent py-2";
   } else {
-    // Other pages: always white background, regardless of scroll position
     backgroundClasses = "bg-white shadow-sm py-0 translate-y-0";
   }
 
 
   return (
-    // Combine base classes, background classes, and visibility classes
     <div
       className={`${baseClasses} ${backgroundClasses} ${visible ? "translate-y-0" : "-translate-y-full"}`}
     >
-      <div className="max-w-[1400px] mx-auto flex items-center justify-between w-full h-20 sm:h-24 px-6 md:px-12 gap-6 md:gap-16">
+      <div className="container mx-auto flex items-center justify-between w-full h-20 sm:h-24 px-4 gap-6 md:gap-16">
         <div className="flex items-center">
-          {/* Logo logic adjusted slightly for clarity, though original was mostly fine */}
           <Image
             src={scrolled || !isHomePage ? "/logo-black.svg" : "/logo.svg"}
             alt="logo"
-            width={200}
+            width={140}
             height={80}
-            className="w-[180px] sm:w-[200px] transition-all duration-300"
+            className=" transition-all duration-300"
           />
         </div>
 
@@ -137,7 +131,7 @@ const Navbar = () => {
             <Link
               key={item.name}
               href={item.link || "#"}
-              className={`text-[15px] font-[600] tracking-wide transition-all duration-300 relative group overflow-hidden ${scrolled || !isHomePage ? "text-gray-800" : "text-white"
+              className={`text-[15px] font-normal font-oswald tracking-wide transition-all duration-300 relative group overflow-hidden ${scrolled || !isHomePage ? "text-gray-800" : "text-white"
                 }`}
             >
               <span className="relative z-10">{item.name}</span>

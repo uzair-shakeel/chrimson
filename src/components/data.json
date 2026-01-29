@@ -24,29 +24,37 @@
     ]
   },
   "hero": {
-    "heading": "Crafted for Living. Designed to Last.",
-    "body": "HELP OPTIMIZATION delivers premium doors, windows, and home solutions tailored to your space. From concept to installation, we combine design, precision, and craftsmanship.",
+    "heading": "Get Your",
+    "heading2": "Dream House",
+    "body": "Carder Complex",
     "button": "Request a Consultation",
     "link": "/contact"
   },
   "about": {
-    "leadingText": "About Us",
-    "heading": "Quality Craftsmanship. Thoughtful Design.",
-    "body": "At HELP OPTIMIZATION, we specialize in made-to-measure doors, windows, home hardware, and interior solutions. Our mission is to transform spaces through durable materials, unique designs, and expert workmanship.",
-    "button": "Learn More About Us",
-    "link": "/about",
-    "stats": [
+    "heading": "RESIDENCE SHOWCASE",
+    "body": "Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis.",
+    "button": "View More",
+    "link": "/view-more",
+    "features": [
       {
-        "title": "Happy Clients",
-        "number": "300+"
+        "icon": "/tap.png",
+        "title": "SMART HOMES:",
+        "body": "At vero eos et accusam et justo duo dolores et ea rebum."
       },
       {
-        "title": "Years of Experience",
-        "number": "25+"
+        "icon": "/clapperboard.png",
+        "title": "MEDIA CENTER:",
+        "body": "At vero eos et accusam et justo duo dolores et ea rebum."
       },
       {
-        "title": "Completed Projects",
-        "number": "500+"
+        "icon": "/water-sport.png",
+        "title": "SWIMMING POOL:",
+        "body": "At vero eos et accusam et justo duo dolores et ea rebum."
+      },
+      {
+        "icon": "/cocktail.png",
+        "title": "DINNING BAR:",
+        "body": "At vero eos et accusam et justo duo dolores et ea rebum."
       }
     ]
   },
